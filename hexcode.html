@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>hexcode</title>
+    </head>
+    <style>
+        .container{
+            border-radius: 50%;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+    
+    <body>
+       
+            Enter color hex-code:
+            <input id="hex" type="text" >
+            <button id="submit">Submit</button>
+        
+        <div class= container>
+            
+        </div>
+    </body>
+    <script>
+    
+        document.getElementById("submit").addEventListener("click",function(){
+            var text = document.getElementById("hex").value;
+            console.log('Df');
+            document.getElementsByClassName("container")[0].style.backgroundColor = text;
+        })
+    </script>
+</html>

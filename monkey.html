@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>monkey</title>
+    </head>
+    <body>
+        <div id = container>
+            <img src = "icons8-hear-no-evil-monkey-96.png" >
+        </div>
+    </body>
+    <script>
+        var container = document.getElementById("container");
+        var flag = true;
+        container.addEventListener("click", function(){
+            if (flag) {
+                container.innerHTML = "<img src = 'icons8-see-no-evil-monkey-96.png' ></img>"
+                flag =false;
+            }
+            
+            else {
+                container.innerHTML = "<img src = 'icons8-hear-no-evil-monkey-96.png' ></img>"
+                flag = true;
+            }
+        })
+    </script>
+</html>
